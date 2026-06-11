@@ -181,7 +181,7 @@ class Preprocess:
     @staticmethod
     def fill_missing_values(df: pd.DataFrame, strategy: str = 'median') -> pd.DataFrame:
         """
-        Preenche valores ausentes em colunas numéricas.
+        Preenche faltantes ausentes em colunas numéricas.
         
         Args:
             df: DataFrame de entrada
