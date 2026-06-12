@@ -40,6 +40,6 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 y_prob = model.predict_proba(X_test)[:, 1]
 
-print("ROC AUC Score:", roc_auc_score(y_test, y_prob))
+print(f"ROC AUC Score: {roc_auc_score(y_test, y_prob)}")
 print(f"Classification Report:\n{classification_report(y_test, y_pred, digits=3)}")
 print(f"Average Precision Score:\n{average_precision_score(y_test, y_pred)}")
